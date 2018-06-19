@@ -6,7 +6,15 @@ using System.Web.Mvc;
 
 namespace MVCTutorial.Controllers {
 	public class HomeController : Controller {
+
+		public ActionResult Max() {
+			ViewBag.Message = "Your Max page.";
+
+			return View();
+		}
+
 		public ActionResult Index() {
+
 			return View();
 		}
 
